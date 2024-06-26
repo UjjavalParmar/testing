@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-0
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-0
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-1
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-2
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-2
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-3
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-3
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-4
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-4
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-5
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /DEMO/REDIS/redis-5
+
