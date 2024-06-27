@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: redis
-  namespace: redis-cluster
+  namespace: rc
 spec:
   serviceName: redis
   replicas: 6
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis:7.2
+        image: redis
         ports:
         - containerPort: 6379
         volumeMounts:
@@ -42,9 +42,8 @@ spec:
       name: redis-data
     spec:
       accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "manual"
       resources:
         requests:
           storage: 1Gi
-      selector:
-        matchLabels:
-          pvc: redis-pvc
+

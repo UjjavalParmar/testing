@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis-nodeport
-  namespace: redis-cluster
+  namespace: rc
 spec:
   type: NodePort
   selector:
@@ -10,4 +10,4 @@ spec:
   ports:
   - port: 6379
     targetPort: 6379
-    nodePort: 30007  # Ensure this port is available
+    nodePort: 30007

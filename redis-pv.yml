@@ -7,6 +7,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-0
 ---
@@ -19,6 +20,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-1
 ---
@@ -31,6 +33,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-2
 ---
@@ -43,6 +46,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-3
 ---
@@ -55,6 +59,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-4
 ---
@@ -67,6 +72,7 @@ spec:
     storage: 1Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: manual
   hostPath:
     path: /DEMO/REDIS/redis-5
 
